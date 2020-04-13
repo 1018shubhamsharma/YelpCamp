@@ -1,9 +1,10 @@
 const express = require("express"),
         app   = express();
 
+app.set("view engine" , "ejs");       
 
 app.get("/", function(req,res){
-    res.send("This is landing page");
+    res.render("landing");
 });
 
  
